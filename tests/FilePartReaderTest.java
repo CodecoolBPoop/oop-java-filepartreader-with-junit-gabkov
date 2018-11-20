@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FilePartReaderTest {
     @Test
-    public void testSetupToLineBelow1ThrowsExceptio(){
+    public void testSetupToLineBelow1ThrowsException(){
         FilePartReader fr = new FilePartReader();
         assertThrows(IllegalArgumentException.class, ()-> {
             fr.setup("input.txt", 1, 0);

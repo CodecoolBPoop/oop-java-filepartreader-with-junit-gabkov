@@ -52,7 +52,7 @@ public class FileWordAnalyzer {
 
     public static void main(String[] args) throws Exception {
         FilePartReader fr = new FilePartReader();
-        fr.setup("input.txt", 1,7);
+        fr.setup("input.txt", 1,8);
         FileWordAnalyzer fa = new FileWordAnalyzer(fr);
         System.out.println(fa.getWordsOrderedAlphabetically());
         System.out.println(fa.getWordsContainingSubstring("aa"));
